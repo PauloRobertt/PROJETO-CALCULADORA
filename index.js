@@ -1,7 +1,5 @@
 import entradaDados from 'readline-sync'
 
-var juros;
-
 console.log("Aplicação de Juros:");
 
 console.log()
@@ -19,12 +17,8 @@ if(valorDevido > 0){
         
     }else if(DiasVencimento > 0){
 
-        if(DiasVencimento > 15){
-            juros = 10;
-        }else{
-            juros = 5;
-        }
-    
+        var juros = DiasVencimento > 15 ? 10 : 5;
+
         var totvJuros = ((Number(juros) / 100) * Number(valorDevido)) + Number(valorDevido) ;
         
         console.log()
