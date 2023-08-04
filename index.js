@@ -19,7 +19,7 @@ if(valorDevido > 0){
 
         var juros = DiasVencimento > 15 ? 10 : 5;
 
-        var totvJuros = ((Number(juros) / 100) * Number(valorDevido)) + Number(valorDevido) ;
+        var totvJuros = ((juros / 100) * valorDevido) + Number(valorDevido) ;
         
         console.log()
 
